@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template
 import threading
 from dotenv import load_dotenv
@@ -86,4 +85,5 @@ if __name__ == '__main__':
 # app.register_blueprint(iot_devices_blueprint, url_prefix='/api-mindolife')
 
 # if __name__ == '__main__':
-#     app.run(host='0.0.0.0', port=5009)
+#   app.run(debug=True, host='0.0.0.0', port=5009)
+
