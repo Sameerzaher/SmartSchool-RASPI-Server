@@ -72,3 +72,18 @@ if __name__ == '__main__':
     # Start the monitor_pir thread with required arguments including server_communication
     threading.Thread(target=monitor_pir, args=(device_manager, manual_control_flag, server_communication), daemon=True).start()
     app.run(debug=False, host='0.0.0.0', port=5009)
+
+
+# from flask import Flask
+
+# from controllers.mindolife.iot_devices_controller import iot_devices_blueprint
+
+# # Removed the import of change_feature_state_service since it's not used here directly.
+
+# app = Flask(__name__)
+
+# # Register the blueprint
+# app.register_blueprint(iot_devices_blueprint, url_prefix='/api-mindolife')
+
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5009)
